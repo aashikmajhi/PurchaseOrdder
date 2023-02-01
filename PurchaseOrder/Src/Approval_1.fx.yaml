@@ -1,0 +1,10 @@
+Approval_1 As screen:
+    Fill: =RGBA(232, 232, 232, 1)
+
+    PdfViewer3 As pdfViewer:
+        Document: =myPdf
+        Height: =768
+        Width: =622
+        X: =75
+        ZIndex: =7
+

@@ -1,0 +1,70 @@
+{
+  "138f5c90-9c33-4ab8-8e34-c21b5da334c2": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Office 365 Users",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1611/1.0.1611.3104/office365users/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_office365users",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {},
+    "dataSources": [
+      "Office365Users"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "138f5c90-9c33-4ab8-8e34-c21b5da334c2"
+  },
+  "a640784d-726c-42c9-b997-9fe1f75d802e": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/u/juanq/gateway/greyhound/3000.150.11/1.0.1613.3116/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {
+      "https://astralnepal.sharepoint.com/sites/NatRuleNITC": {
+        "dataSources": {
+          "Purchase Requisition": {
+            "tableName": "0fadbd28-4233-419f-a479-8685c1e8f4eb"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "Purchase Requisition"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "a640784d-726c-42c9-b997-9fe1f75d802e"
+  },
+  "f77165ed-60b3-4e5e-bea7-26941e61fdf7": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Office 365 Outlook",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1617/1.0.1617.3171/office365/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_office365",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {},
+    "dataSources": [
+      "Office365Outlook"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "f77165ed-60b3-4e5e-bea7-26941e61fdf7"
+  }
+}

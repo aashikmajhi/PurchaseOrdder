@@ -1,0 +1,18 @@
+PurchaseOrder As screen:
+    Fill: =RGBA(232, 232, 232, 1)
+
+    Label11_6 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(0, 89, 178, 1)
+        Color: =RGBA(39, 113, 194, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Bold
+        Height: =118
+        Size: =45
+        Text: ="Astral Computers Nepal Pvt. Ltd."
+        Width: =1142
+        X: =94
+        Y: =30
+        ZIndex: =1
+
