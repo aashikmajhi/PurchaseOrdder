@@ -37,7 +37,7 @@
             Reset(desctxt);
             Reset(qtytxt);
             Reset(purposetxt);
-            Navigate(PurchaseRequisition_1);
+            Navigate(PurchaseRequisition);
         RadiusBottomLeft: =20
         RadiusBottomRight: =20
         RadiusTopLeft: =20

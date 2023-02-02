@@ -114,9 +114,9 @@
   },
   "ScreenOrder": [
     "Dashboard",
+    "Trial",
     "PurchaseRequisition",
     "PurchaseRequisition_1",
-    "PurchaseRequisition_2",
     "Add New Item",
     "Edit Item",
     "UploadQuotation",

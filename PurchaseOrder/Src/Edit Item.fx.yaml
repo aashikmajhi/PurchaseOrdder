@@ -125,7 +125,7 @@
             Reset(TextInput10_3);
             Reset(TextInput10);
             Reset(TextInput10_1);
-            Navigate(PurchaseRequisition_1);
+            Navigate(PurchaseRequisition);
         Size: =15
         Text: ="Update"
         X: =662

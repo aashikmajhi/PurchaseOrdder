@@ -2,7 +2,43 @@ PurchaseRequisition_1 As screen:
     Fill: =RGBA(232, 232, 232, 1)
     OnVisible: =
 
-    Gallery5 As gallery.galleryVertical:
+    "Gallery1_1 As gallery.'BrowseLayout_Vertical_OneTextVariant_ver4.0'":
+        BorderColor: =RGBA(0, 89, 178, 1)
+        BorderThickness: =3
+        Height: =245
+        Items: =Sequence(CountRows(Gallery5_1.AllItems))
+        Layout: =Layout.Vertical
+        TemplatePadding: =0
+        TemplateSize: |
+            =47
+        Width: =80
+        X: =24
+        Y: =339
+        ZIndex: =1
+
+        Separator2_1 As rectangle:
+            BorderColor: =RGBA(0, 89, 178, 1)
+            BorderThickness: =1
+            Fill: =RGBA(0, 89, 178, 1)
+            Height: =1
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - 1
+            ZIndex: =3
+
+        Label15_1 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 89, 178, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Height: =Gallery1_1.TemplateHeight
+            OnSelect: =Select(Parent)
+            Size: =13
+            Text: =ThisItem.Value
+            Width: =80
+            ZIndex: =4
+
+    Gallery5_1 As gallery.galleryVertical:
         BorderColor: =RGBA(0, 89, 178, 1)
         BorderThickness: =2
         Height: =245
@@ -11,77 +47,65 @@ PurchaseRequisition_1 As screen:
         OnSelect: =Navigate('Edit Item')
         TemplatePadding: =0
         TemplateSize: =47
-        Width: =1342
-        X: =14
+        Width: =1252
+        X: =104
         Y: =339
         ZIndex: =1
 
-        Rectangle2 As rectangle:
+        Rectangle2_4 As rectangle:
             BorderColor: =RGBA(0, 89, 178, 1)
             BorderThickness: =3
             Fill: =RGBA(0, 51, 102, 1)
-            Height: =Gallery5.TemplateHeight
-            OnSelect: =Select(Parent)
-            Width: =1
-            X: =81
-            ZIndex: =1
-
-        Rectangle2_1 As rectangle:
-            BorderColor: =RGBA(0, 89, 178, 1)
-            BorderThickness: =3
-            Fill: =RGBA(0, 51, 102, 1)
-            Height: =Gallery5.TemplateHeight
+            Height: =Gallery5_1.TemplateHeight
             OnSelect: =Select(Parent)
             Width: =1
             X: =583
             ZIndex: =2
 
-        Rectangle2_2 As rectangle:
+        Rectangle2_5 As rectangle:
             BorderColor: =RGBA(0, 89, 178, 1)
-            BorderThickness: =3
+            BorderThickness: =2
             Fill: =RGBA(0, 51, 102, 1)
-            Height: =Gallery5.TemplateHeight
+            Height: =Gallery5_1.TemplateHeight
             OnSelect: =Select(Parent)
             Width: =1
             X: =840
             ZIndex: =3
 
-        Rectangle2_3 As rectangle:
+        Rectangle2_6 As rectangle:
             BorderColor: =RGBA(0, 89, 178, 1)
             BorderThickness: =3
             Fill: =RGBA(0, 51, 102, 1)
             Height: =1
             OnSelect: =Select(Parent)
-            Width: =Gallery5.TemplateWidth
+            Width: =Gallery5_1.TemplateWidth
             Y: =46
             ZIndex: =4
 
-        Label24 As label:
-            BorderColor: =RGBA(0, 89, 178, 1)
-            Color: =RGBA(0, 0, 0, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            Height: =45
-            OnSelect: =Select(Parent)
-            Size: =13
-            Text: =ThisItem.Description
-            Width: =501
-            X: =82
-            Y: =1
-            ZIndex: =5
-
-        Label25 As label:
+        Label24_1 As label:
             BorderColor: =RGBA(0, 89, 178, 1)
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             Height: =46
             OnSelect: =Select(Parent)
             Size: =13
+            Text: =ThisItem.Description
+            Width: =583
+            ZIndex: =5
+
+        Label25_1 As label:
+            BorderColor: =RGBA(0, 89, 178, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Height: =47
+            OnSelect: =Select(Parent)
+            Size: =13
             Text: =ThisItem.Purpose
-            Width: =502
+            Width: =338
             X: =840
             ZIndex: =6
 
-        Label26 As label:
+        Label26_1 As label:
             BorderColor: =RGBA(0, 89, 178, 1)
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
@@ -93,19 +117,7 @@ PurchaseRequisition_1 As screen:
             X: =584
             ZIndex: =7
 
-        Label27 As label:
-            Align: =Align.Center
-            BorderColor: =RGBA(0, 89, 178, 1)
-            Color: =RGBA(0, 0, 0, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            Height: =46
-            OnSelect: =Select(Parent)
-            Size: =13
-            Text: =ThisItem.SN
-            Width: =82
-            ZIndex: =8
-
-        Icon2 As icon.CancelBadge:
+        Icon2_1 As icon.CancelBadge:
             BorderColor: =RGBA(0, 89, 178, 1)
             Color: =RGBA(0, 89, 178, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
@@ -118,10 +130,10 @@ PurchaseRequisition_1 As screen:
             PaddingRight: =5
             PaddingTop: =5
             Width: =53
-            X: =1279
+            X: =1199
             ZIndex: =9
 
-    Button2_1 As button:
+    Button2_3 As button:
         Color: =RGBA(0, 121, 187, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
@@ -143,7 +155,7 @@ PurchaseRequisition_1 As screen:
         Y: =586
         ZIndex: =2
 
-    Label8_3 As label:
+    Label8_5 As label:
         BorderColor: =RGBA(0, 89, 178, 1)
         Color: =RGBA(0, 0, 0, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
@@ -155,7 +167,7 @@ PurchaseRequisition_1 As screen:
         Y: =651
         ZIndex: =3
 
-    Label9_3 As label:
+    Label9_5 As label:
         BorderColor: =RGBA(0, 89, 178, 1)
         Color: =RGBA(0, 0, 0, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
@@ -167,7 +179,7 @@ PurchaseRequisition_1 As screen:
         Y: =651
         ZIndex: =4
 
-    Label8_4 As label:
+    Label8_6 As label:
         BorderColor: =RGBA(0, 89, 178, 1)
         Color: =RGBA(0, 0, 0, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
@@ -179,7 +191,7 @@ PurchaseRequisition_1 As screen:
         Y: =651
         ZIndex: =5
 
-    Label9_4 As label:
+    Label9_6 As label:
         BorderColor: =RGBA(0, 89, 178, 1)
         Color: =RGBA(0, 0, 0, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
@@ -193,7 +205,7 @@ PurchaseRequisition_1 As screen:
         Y: =651
         ZIndex: =6
 
-    Label13 As label:
+    Label13_4 As label:
         Align: =Align.Center
         BorderColor: =RGBA(0, 89, 178, 1)
         Color: =RGBA(0, 0, 0, 1)
@@ -207,7 +219,7 @@ PurchaseRequisition_1 As screen:
         Y: =292
         ZIndex: =9
 
-    Label13_1 As label:
+    Label13_8 As label:
         Align: =Align.Center
         BorderColor: =RGBA(0, 89, 178, 1)
         Color: =RGBA(0, 0, 0, 1)
@@ -221,7 +233,7 @@ PurchaseRequisition_1 As screen:
         Y: =292
         ZIndex: =10
 
-    Label13_2 As label:
+    Label13_9 As label:
         Align: =Align.Center
         BorderColor: =RGBA(0, 89, 178, 1)
         Color: =RGBA(0, 0, 0, 1)
@@ -235,7 +247,7 @@ PurchaseRequisition_1 As screen:
         Y: =292
         ZIndex: =11
 
-    Label13_3 As label:
+    Label13_10 As label:
         Align: =Align.Center
         BorderColor: =RGBA(0, 89, 178, 1)
         Color: =RGBA(0, 0, 0, 1)
@@ -249,7 +261,7 @@ PurchaseRequisition_1 As screen:
         Y: =292
         ZIndex: =12
 
-    Label19 As label:
+    Label19_1 As label:
         BorderColor: =RGBA(0, 89, 178, 1)
         Color: =RGBA(0, 0, 0, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
@@ -262,7 +274,7 @@ PurchaseRequisition_1 As screen:
         Y: =130
         ZIndex: =13
 
-    DatePicker2 As datepicker:
+    DatePicker2_1 As datepicker:
         BorderColor: =RGBA(0, 89, 178, 1)
         CalendarHeaderFill: =RGBA(0, 51, 102, 1)
         Color: =RGBA(0, 0, 0, 1)
@@ -277,7 +289,7 @@ PurchaseRequisition_1 As screen:
         Y: =128
         ZIndex: =14
 
-    Label20 As label:
+    Label20_2 As label:
         BorderColor: =RGBA(0, 89, 178, 1)
         Color: =RGBA(0, 0, 0, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
@@ -290,7 +302,7 @@ PurchaseRequisition_1 As screen:
         Y: =189
         ZIndex: =15
 
-    TextInput8 As text:
+    TextInput8_2 As text:
         BorderColor: =RGBA(0, 89, 178, 1)
         BorderThickness: =2
         Color: =RGBA(0, 0, 0, 1)
@@ -309,7 +321,7 @@ PurchaseRequisition_1 As screen:
         Y: =189
         ZIndex: =16
 
-    Label20_1 As label:
+    Label20_3 As label:
         BorderColor: =RGBA(0, 89, 178, 1)
         Color: =RGBA(0, 0, 0, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
@@ -321,7 +333,7 @@ PurchaseRequisition_1 As screen:
         Y: =195
         ZIndex: =18
 
-    TextInput8_1 As text:
+    TextInput8_3 As text:
         BorderColor: =RGBA(0, 89, 178, 1)
         BorderThickness: =2
         Color: =RGBA(0, 0, 0, 1)
@@ -340,7 +352,7 @@ PurchaseRequisition_1 As screen:
         Y: =195
         ZIndex: =19
 
-    Label22 As label:
+    Label22_1 As label:
         BorderColor: =RGBA(0, 89, 178, 1)
         Color: =RGBA(0, 0, 0, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
@@ -352,7 +364,7 @@ PurchaseRequisition_1 As screen:
         Y: =252
         ZIndex: =20
 
-    Label23 As label:
+    Label23_1 As label:
         BorderColor: =RGBA(0, 89, 178, 1)
         Color: =RGBA(0, 0, 0, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
@@ -364,7 +376,7 @@ PurchaseRequisition_1 As screen:
         Y: =242
         ZIndex: =21
 
-    TextInput9 As text:
+    TextInput9_1 As text:
         BorderColor: =RGBA(0, 89, 178, 1)
         BorderThickness: =2
         Color: =RGBA(0, 0, 0, 1)
@@ -384,7 +396,7 @@ PurchaseRequisition_1 As screen:
         Y: =242
         ZIndex: =22
 
-    Button1 As button:
+    Button1_1 As button:
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
@@ -408,7 +420,7 @@ PurchaseRequisition_1 As screen:
         Y: =705
         ZIndex: =23
 
-    Label11_2 As label:
+    Label11_8 As label:
         Align: =Align.Center
         BorderColor: =RGBA(0, 89, 178, 1)
         Color: =RGBA(39, 113, 194, 1)
@@ -422,7 +434,7 @@ PurchaseRequisition_1 As screen:
         X: =104
         ZIndex: =24
 
-    Icon4 As icon.BackArrow:
+    Icon4_1 As icon.BackArrow:
         BorderColor: =RGBA(0, 89, 178, 1)
         Color: =RGBA(0, 89, 178, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)

@@ -12,7 +12,7 @@ Dashboard As screen:
         Height: =112
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
-        OnSelect: =Navigate(PurchaseRequisition_1)
+        OnSelect: =Navigate(PurchaseRequisition)
         Size: =15
         Text: ="Purchase Requisition"
         Width: =262

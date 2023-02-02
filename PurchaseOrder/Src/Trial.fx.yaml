@@ -1,0 +1,341 @@
+Trial As screen:
+    BackgroundImage: =
+    Fill: =RGBA(232, 232, 232, 1)
+
+    Form1 As form:
+        BorderColor: =RGBA(0, 89, 178, 1)
+        Height: =448
+        SnapToColumns: =false
+        Width: =1342
+        X: =10
+        Y: =132
+        ZIndex: =1
+
+        DataCard1 As typedDataCard.blankCard:
+            BorderColor: =RGBA(0, 89, 178, 1)
+            BorderStyle: =BorderStyle.Solid
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =61
+            Width: =1332
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+            Label1 As label:
+                BorderColor: =RGBA(0, 89, 178, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Size: =13
+                Text: ="Date"
+                Width: =58
+                X: =12
+                Y: =15
+                ZIndex: =1
+
+            DatePicker1 As datepicker:
+                BorderColor: =RGBA(0, 89, 178, 1)
+                CalendarHeaderFill: =RGBA(0, 51, 102, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                HoverDateFill: =RGBA(153, 205, 255, 1)
+                IconBackground: =RGBA(0, 51, 102, 1)
+                SelectedDateFill: =RGBA(0, 51, 102, 1)
+                X: =82
+                Y: =15
+                ZIndex: =2
+
+        DataCard2 As typedDataCard.blankCard:
+            BorderColor: =RGBA(0, 89, 178, 1)
+            BorderStyle: =BorderStyle.Solid
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =65
+            Width: =555
+            X: =1
+            Y: =0
+            ZIndex: =1
+
+            Label2 As label:
+                BorderColor: =RGBA(0, 89, 178, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Size: =13
+                Text: ="From"
+                X: =9
+                Y: =9
+                ZIndex: =1
+
+            TextInput1 As text:
+                BorderColor: =RGBA(0, 89, 178, 1)
+                BorderThickness: =2
+                Color: =RGBA(0, 0, 0, 1)
+                Default: =Office365Users.MyProfileV2().displayName
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                FocusedBorderThickness: =4
+                HoverBorderColor: =RGBA(0, 89, 178, 1)
+                HoverColor: =RGBA(0, 0, 0, 1)
+                HoverFill: =RGBA(153, 205, 255, 1)
+                Size: =13
+                X: =86
+                Y: =9
+                ZIndex: =2
+
+        DataCard3 As typedDataCard.blankCard:
+            BorderColor: =RGBA(0, 89, 178, 1)
+            BorderStyle: =BorderStyle.Solid
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =59
+            Width: =441
+            X: =2
+            Y: =0
+            ZIndex: =1
+
+            Label3 As label:
+                BorderColor: =RGBA(0, 89, 178, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Size: =13
+                Text: ="Department"
+                Width: =117
+                X: =10
+                Y: =9
+                ZIndex: =1
+
+            TextInput2 As text:
+                BorderColor: =RGBA(0, 89, 178, 1)
+                BorderThickness: =2
+                Color: =RGBA(0, 0, 0, 1)
+                Default: =Office365Users.MyProfileV2().department
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                FocusedBorderThickness: =4
+                HoverBorderColor: =RGBA(0, 89, 178, 1)
+                HoverColor: =RGBA(0, 0, 0, 1)
+                HoverFill: =RGBA(153, 205, 255, 1)
+                Size: =13
+                Width: =308
+                X: =127
+                Y: =9
+                ZIndex: =2
+
+        DataCard5 As typedDataCard.blankCard:
+            BorderColor: =RGBA(0, 89, 178, 1)
+            BorderStyle: =BorderStyle.Solid
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =56
+            Width: =333
+            X: =3
+            Y: =0
+            ZIndex: =1
+
+            Label10 As label:
+                BorderColor: =RGBA(0, 89, 178, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Size: =13
+                Text: ="No"
+                Width: =51
+                X: =82
+                Y: =12
+                ZIndex: =1
+
+            TextInput3 As text:
+                BorderColor: =RGBA(0, 89, 178, 1)
+                BorderThickness: =2
+                Color: =RGBA(0, 0, 0, 1)
+                Default: ="Auto Numeric"
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                FocusedBorderThickness: =4
+                HoverBorderColor: =RGBA(0, 89, 178, 1)
+                HoverColor: =RGBA(0, 0, 0, 1)
+                HoverFill: =RGBA(153, 205, 255, 1)
+                Size: =13
+                Width: =192
+                X: =133
+                Y: =12
+                ZIndex: =2
+
+        DataCard6 As typedDataCard.blankCard:
+            BorderColor: =RGBA(0, 89, 178, 1)
+            BorderStyle: =BorderStyle.Solid
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =74
+            Width: =1332
+            X: =4
+            Y: =0
+            ZIndex: =1
+
+            Label12 As label:
+                BorderColor: =RGBA(0, 89, 178, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Height: =45
+                Size: =13
+                Text: ="Please arrange to purchase the"
+                Width: =386
+                X: =42
+                Y: =15
+                ZIndex: =1
+
+        DataCard4 As typedDataCard.blankCard:
+            BorderColor: =RGBA(0, 89, 178, 1)
+            BorderStyle: =BorderStyle.Solid
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =234
+            Width: =1332
+            X: =5
+            Y: =0
+            ZIndex: =1
+
+            Label4 As label:
+                BorderColor: =RGBA(0, 89, 178, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Height: =38
+                Size: =13
+                Text: ="S.N."
+                Width: =56
+                X: =29
+                Y: =10
+                ZIndex: =1
+
+            Label5 As label:
+                BorderColor: =RGBA(0, 89, 178, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Size: =13
+                Text: ="Description"
+                X: =344
+                Y: =10
+                ZIndex: =2
+
+            Label6 As label:
+                BorderColor: =RGBA(0, 89, 178, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Size: =13
+                Text: ="Quantity"
+                X: =800
+                Y: =10
+                ZIndex: =3
+
+            Label7 As label:
+                BorderColor: =RGBA(0, 89, 178, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Size: =13
+                Text: ="Purpose"
+                X: =1179
+                Y: =10
+                ZIndex: =4
+
+    Button2 As button:
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(0, 51, 102, 1)
+        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+        FontWeight: =FontWeight.Semibold
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
+        Size: =15
+        Text: ="Add Item"
+        X: =579
+        Y: =429
+        ZIndex: =2
+
+    Label8 As label:
+        BorderColor: =RGBA(0, 89, 178, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Size: =13
+        Text: ="From"
+        Width: =75
+        X: =24
+        Y: =651
+        ZIndex: =3
+
+    Label9 As label:
+        BorderColor: =RGBA(0, 89, 178, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Size: =13
+        Text: =Office365Users.MyProfileV2().displayName
+        Width: =190
+        X: =99
+        Y: =651
+        ZIndex: =4
+
+    Label8_1 As label:
+        BorderColor: =RGBA(0, 89, 178, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Size: =13
+        Text: ="Approved By"
+        Width: =126
+        X: =400
+        Y: =651
+        ZIndex: =5
+
+    Label9_1 As label:
+        BorderColor: =RGBA(0, 89, 178, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Size: =13
+        Text: |-
+            =//Office365Users.ManagerV2(Office365Users.MyProfileV2().userPrincipalName).userPrincipalName
+            "Finance Head/Department Head"
+        Width: =295
+        X: =527
+        Y: =651
+        ZIndex: =6
+
+    Label8_2 As label:
+        BorderColor: =RGBA(0, 89, 178, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Size: =13
+        Text: ="Sanctioned By"
+        Width: =144
+        X: =883
+        Y: =651
+        ZIndex: =7
+
+    Label9_2 As label:
+        BorderColor: =RGBA(0, 89, 178, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Size: =13
+        Text: ="CEO"
+        Width: =190
+        X: =1029
+        Y: =651
+        ZIndex: =8
+
+    Label11_1 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(0, 89, 178, 1)
+        Color: =RGBA(39, 113, 194, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Bold
+        Height: =118
+        Size: =45
+        Text: ="Astral Computers Nepal Pvt. Ltd."
+        Width: =1142
+        X: =110
+        Y: =14
+        ZIndex: =9
+
