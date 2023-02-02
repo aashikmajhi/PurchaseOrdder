@@ -1,0 +1,107 @@
+Dashboard_2 As screen:
+    BackgroundImage: =
+    Fill: =RGBA(235, 245, 255, 1)
+
+    Button7_1 As button:
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(153, 205, 255, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =446
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
+        Size: =15
+        Text: =""
+        Width: =1328
+        X: =18
+        Y: =262
+        ZIndex: =1
+
+    Gallery3_1 As gallery.galleryVertical:
+        BorderColor: =RGBA(0, 89, 178, 1)
+        Height: =339
+        Items: ='Purchase Requisition'
+        Layout: =Layout.Vertical
+        ShowScrollbar: =false
+        TemplateSize: =If(Self.Layout = Layout.Horizontal, Min(280, Self.Width - 60), Min(280, Self.Height - 60))
+        Width: =1294
+        X: =34
+        Y: =354
+        ZIndex: =1
+
+    Gallery2_1 As gallery.galleryVertical:
+        BorderColor: =RGBA(235, 245, 255, 1)
+        BorderThickness: =1
+        Height: =79
+        Items: |-
+            =Table({Filter: "All"}, {Filter: "Pending"}, {Filter: "Approved"}, {Filter: "Declined"})
+        Layout: =Layout.Vertical
+        TemplateSize: =67
+        Width: =1197
+        WrapCount: =4
+        X: =69
+        Y: =275
+        ZIndex: =2
+
+        Button5_1 As button:
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =RGBA(0, 89, 178, 1)
+            FontWeight: =FontWeight.Semibold
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
+            OnSelect: =Select(Parent)
+            Size: =15
+            Text: =ThisItem.Filter
+            X: =50
+            Y: =13
+            ZIndex: =1
+
+    Label11_10 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(0, 89, 178, 1)
+        Color: =RGBA(39, 113, 194, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Bold
+        Height: =118
+        Size: =45
+        Text: ="Astral Computers Nepal Pvt. Ltd."
+        Width: =1142
+        X: =98
+        Y: =40
+        ZIndex: =3
+
+    Button6_1 As button:
+        Align: =Align.Left
+        Color: =RGBA(0, 80, 160, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(0, 0, 0, 0)
+        Font: =Font.Georgia
+        FontWeight: =FontWeight.Semibold
+        Height: =118
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
+        Size: =23
+        Text: ="Hey! " & Office365Users.MyProfile().GivenName & Char(13) & If(Hour(Now())<12, "Good morning, ", Hour(Now())<17, "Good afternoon, ", "Good evening, ") & " Welcome Back"
+        Width: =524
+        X: =166
+        Y: =144
+        ZIndex: =4
+
+    Image2_1 As image:
+        BorderColor: =RGBA(0, 89, 178, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        RadiusBottomLeft: =45
+        RadiusBottomRight: =45
+        RadiusTopLeft: =45
+        RadiusTopRight: =45
+        X: =34
+        Y: =153
+        ZIndex: =5
+
