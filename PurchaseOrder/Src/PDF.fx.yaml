@@ -2,9 +2,9 @@ PDF As screen:
     Fill: =RGBA(232, 232, 232, 1)
 
     PdfViewer3 As pdfViewer:
+        DisplayMode: =DisplayMode.View
         Document: =myPdf
-        Height: =768
-        Width: =622
-        X: =75
+        Height: =762
+        Width: =1366
         ZIndex: =7
 

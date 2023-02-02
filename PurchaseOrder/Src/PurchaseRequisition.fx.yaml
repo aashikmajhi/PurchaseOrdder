@@ -4,7 +4,7 @@ PurchaseRequisition As screen:
 
     "Gallery1 As gallery.'BrowseLayout_Vertical_OneTextVariant_ver4.0'":
         BorderColor: =RGBA(0, 89, 178, 1)
-        BorderThickness: =3
+        BorderThickness: =2
         Height: =245
         Items: =Sequence(CountRows(Gallery5.AllItems))
         Layout: =Layout.Vertical
@@ -90,7 +90,7 @@ PurchaseRequisition As screen:
             OnSelect: =Select(Parent)
             Size: =13
             Text: =ThisItem.Description
-            Width: =583
+            Width: =576
             ZIndex: =5
 
         Label25 As label:
@@ -229,7 +229,7 @@ PurchaseRequisition As screen:
         Size: =13
         Text: ="Description"
         Width: =237
-        X: =163
+        X: =263
         Y: =292
         ZIndex: =10
 
@@ -243,7 +243,7 @@ PurchaseRequisition As screen:
         Size: =13
         Text: ="Quantity"
         Width: =237
-        X: =600
+        X: =700
         Y: =292
         ZIndex: =11
 
@@ -257,7 +257,7 @@ PurchaseRequisition As screen:
         Size: =13
         Text: ="Purpose"
         Width: =237
-        X: =955
+        X: =985
         Y: =292
         ZIndex: =12
 
