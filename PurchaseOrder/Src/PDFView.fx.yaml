@@ -1,6 +1,7 @@
 PDFView As screen:
     Fill: =RGBA(232, 232, 232, 1)
-    OnVisible: =Set(myPdf,PDF(PDFView))
+    OnVisible: |-
+        =Set(myPdf,PDF(PDFView,{DPI: 72, Margin: "25mm", Orientation: "Landscape",Size:"B5"}))
 
     "Gallery1_1 As gallery.'BrowseLayout_Vertical_OneTextVariant_ver4.0'":
         BorderColor: =RGBA(0, 89, 178, 1)
