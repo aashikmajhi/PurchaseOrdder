@@ -89,20 +89,7 @@ Dashboard_2 As screen:
         Size: =23
         Text: ="Hey! " & Office365Users.MyProfile().GivenName & Char(13) & If(Hour(Now())<12, "Good morning, ", Hour(Now())<17, "Good afternoon, ", "Good evening, ") & " Welcome Back"
         Width: =524
-        X: =166
+        X: =16
         Y: =144
         ZIndex: =4
-
-    Image2_1 As image:
-        BorderColor: =RGBA(0, 89, 178, 1)
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        Image: =Office365Users.UserPhoto(User().Image)
-        RadiusBottomLeft: =50
-        RadiusBottomRight: =50
-        RadiusTopLeft: =50
-        RadiusTopRight: =50
-        X: =34
-        Y: =153
-        ZIndex: =5
 

@@ -97,10 +97,10 @@ Dashboard_1 As screen:
         BorderColor: =RGBA(0, 89, 178, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
-        RadiusBottomLeft: =45
-        RadiusBottomRight: =45
-        RadiusTopLeft: =45
-        RadiusTopRight: =45
+        RadiusBottomLeft: =50
+        RadiusBottomRight: =50
+        RadiusTopLeft: =50
+        RadiusTopRight: =50
         X: =34
         Y: =153
         ZIndex: =5

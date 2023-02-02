@@ -113,6 +113,7 @@
     "UserLocale": "en-US"
   },
   "ScreenOrder": [
+    "SplashScreen",
     "Dashboard",
     "Trial",
     "PurchaseRequisition",
@@ -124,7 +125,6 @@
     "Approval",
     "PDF",
     "Dashboard_1",
-    "Dashboard_2",
-    "SplashScreen"
+    "Dashboard_2"
   ]
 }
