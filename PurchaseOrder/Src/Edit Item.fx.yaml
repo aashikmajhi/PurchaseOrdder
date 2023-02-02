@@ -76,8 +76,8 @@
         HoverFill: =RGBA(153, 205, 255, 1)
         Size: =13
         Width: =222
-        X: =590
-        Y: =347
+        X: =580
+        Y: =343
         ZIndex: =5
 
     TextInput10_2 As text:
@@ -95,7 +95,7 @@
         HoverFill: =RGBA(153, 205, 255, 1)
         Size: =13
         Width: =400
-        X: =590
+        X: =580
         Y: =437
         ZIndex: =6
 
