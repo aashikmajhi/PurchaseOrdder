@@ -117,22 +117,6 @@ PDFView As screen:
             X: =584
             ZIndex: =7
 
-        Icon2_1 As icon.CancelBadge:
-            BorderColor: =RGBA(0, 89, 178, 1)
-            Color: =RGBA(0, 89, 178, 1)
-            DisabledBorderColor: =RGBA(166, 166, 166, 1)
-            DisabledColor: =RGBA(244, 244, 244, 1)
-            Height: =44
-            Icon: =Icon.CancelBadge
-            OnSelect: =Remove(PurchaseReq,ThisItem)
-            PaddingBottom: =5
-            PaddingLeft: =5
-            PaddingRight: =5
-            PaddingTop: =5
-            Width: =53
-            X: =1199
-            ZIndex: =9
-
     Label8_6 As label:
         BorderColor: =RGBA(0, 89, 178, 1)
         Color: =RGBA(0, 0, 0, 1)

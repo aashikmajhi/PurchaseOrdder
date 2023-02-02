@@ -106,8 +106,8 @@
         DisabledColor: =RGBA(244, 244, 244, 1)
         Icon: =Icon.BackArrow
         OnSelect: =Back()
-        X: =45
-        Y: =78
+        X: =50
+        Y: =50
         ZIndex: =7
 
     Button3 As button:

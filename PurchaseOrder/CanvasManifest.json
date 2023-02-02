@@ -122,6 +122,7 @@
     "UploadQuotation",
     "PurchaseOrder",
     "Approval",
-    "PDF"
+    "PDF",
+    "Dashboard_1"
   ]
 }
