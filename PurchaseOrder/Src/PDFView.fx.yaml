@@ -1,6 +1,6 @@
-PurchaseRequisition_1 As screen:
+PDFView As screen:
     Fill: =RGBA(232, 232, 232, 1)
-    OnVisible: =
+    OnVisible: =Set(myPdf,PDF(PDFView))
 
     "Gallery1_1 As gallery.'BrowseLayout_Vertical_OneTextVariant_ver4.0'":
         BorderColor: =RGBA(0, 89, 178, 1)
@@ -132,52 +132,6 @@ PurchaseRequisition_1 As screen:
             Width: =53
             X: =1199
             ZIndex: =9
-
-    Button2_3 As button:
-        Color: =RGBA(0, 121, 187, 1)
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        Fill: =RGBA(241, 244, 249, 1)
-        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
-        FontWeight: =FontWeight.Semibold
-        Height: =42
-        HoverColor: =RGBA(255, 255, 255, 1)
-        HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
-        OnSelect: =Navigate('Add New Item')
-        RadiusBottomLeft: =20
-        RadiusBottomRight: =20
-        RadiusTopLeft: =20
-        RadiusTopRight: =20
-        Size: =15
-        Text: ="Add Item"
-        X: =594
-        Y: =586
-        ZIndex: =2
-
-    Label8_5 As label:
-        BorderColor: =RGBA(0, 89, 178, 1)
-        Color: =RGBA(0, 0, 0, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        FontWeight: =FontWeight.Bold
-        Size: =13
-        Text: ="From"
-        Width: =75
-        X: =104
-        Y: =651
-        ZIndex: =3
-
-    Label9_5 As label:
-        BorderColor: =RGBA(0, 89, 178, 1)
-        Color: =RGBA(0, 0, 0, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        FontWeight: =FontWeight.Semibold
-        Size: =13
-        Text: =Office365Users.MyProfileV2().displayName
-        Width: =190
-        X: =179
-        Y: =651
-        ZIndex: =4
 
     Label8_6 As label:
         BorderColor: =RGBA(0, 89, 178, 1)
@@ -396,30 +350,6 @@ PurchaseRequisition_1 As screen:
         Y: =242
         ZIndex: =22
 
-    Button1_1 As button:
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        Fill: =RGBA(0, 51, 102, 1)
-        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
-        FontWeight: =FontWeight.Semibold
-        HoverColor: =RGBA(255, 255, 255, 1)
-        HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
-        OnSelect: |-
-            =//PDF(PurchaseRequisition_1);
-            //Set(myPdf,PDF(PurchaseRequisition_1));
-            //Office365Outlook.SendEmailV2(Label9_4.Text,"This is a test message","New request for purchase requisition has been made.");
-            //ClearCollect(PurchaseReq,AllowedValues);
-            Collect(PurchaseReq,AllowedValues);
-            Navigate(PurchaseRequisition_2)
-        Size: =15
-        Text: |-
-            ="Submit
-            "
-        X: =594
-        Y: =705
-        ZIndex: =23
-
     Label11_8 As label:
         Align: =Align.Center
         BorderColor: =RGBA(0, 89, 178, 1)
@@ -433,15 +363,4 @@ PurchaseRequisition_1 As screen:
         Width: =1142
         X: =104
         ZIndex: =24
-
-    Icon4_1 As icon.BackArrow:
-        BorderColor: =RGBA(0, 89, 178, 1)
-        Color: =RGBA(0, 89, 178, 1)
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(244, 244, 244, 1)
-        Icon: =Icon.BackArrow
-        OnSelect: =Back()
-        X: =24
-        Y: =23
-        ZIndex: =25
 

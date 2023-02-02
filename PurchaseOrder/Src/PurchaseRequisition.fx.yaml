@@ -411,7 +411,7 @@ PurchaseRequisition As screen:
             //Office365Outlook.SendEmailV2(Label9_4.Text,"This is a test message","New request for purchase requisition has been made.");
             //ClearCollect(PurchaseReq,AllowedValues);
             Collect(PurchaseReq,AllowedValues);
-            Navigate(PurchaseRequisition_2)
+            Navigate(PDFView)
         Size: =15
         Text: |-
             ="Submit

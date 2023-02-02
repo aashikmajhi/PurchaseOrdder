@@ -116,12 +116,12 @@
     "Dashboard",
     "Trial",
     "PurchaseRequisition",
-    "PurchaseRequisition_1",
+    "PDFView",
     "Add New Item",
     "Edit Item",
     "UploadQuotation",
     "PurchaseOrder",
     "Approval",
-    "Approval_1"
+    "PDF"
   ]
 }

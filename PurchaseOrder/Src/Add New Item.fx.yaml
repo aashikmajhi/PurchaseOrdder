@@ -13,27 +13,15 @@
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
         OnSelect: |-
-            =//Collect(
-            //    PurchaseReq,
-            //    {
-            //        SN:sntxt.Text,
-            //        Description: desctxt.Text,
-            //        Quantity: qtytxt.Text,
-            //        Purpose:purposetxt.Text
-            //    }
-            //);
-            
-            If(!IsBlank((sntxt||desctxt||qtytxt||purposetxt)),
+            =If(!IsBlank((desctxt||qtytxt||purposetxt)),
                 Collect(PurchaseReq,
                 {
-                    SN:sntxt.Text,
                     Description: desctxt.Text,
                     Quantity: qtytxt.Text,
                     Purpose:purposetxt.Text
                 }
             ),Notify("Empty fields can not be processed"));
             
-            Reset(sntxt);
             Reset(desctxt);
             Reset(qtytxt);
             Reset(purposetxt);
@@ -60,7 +48,7 @@
         Text: ="Description"
         Width: =135
         X: =391
-        Y: =236
+        Y: =186
         ZIndex: =10
 
     Label13_6 As label:
@@ -73,7 +61,7 @@
         Text: ="Quantity"
         Width: =135
         X: =391
-        Y: =393
+        Y: =343
         ZIndex: =11
 
     Label13_7 As label:
@@ -86,7 +74,7 @@
         Text: ="Purpose"
         Width: =135
         X: =391
-        Y: =487
+        Y: =437
         ZIndex: =12
 
     desctxt As text:
@@ -107,7 +95,7 @@
         Size: =13
         Width: =400
         X: =579
-        Y: =238
+        Y: =188
         ZIndex: =13
 
     qtytxt As text:
@@ -128,7 +116,7 @@
         Size: =13
         Width: =222
         X: =579
-        Y: =397
+        Y: =347
         ZIndex: =14
 
     purposetxt As text:
@@ -148,39 +136,8 @@
         Size: =13
         Width: =400
         X: =579
-        Y: =487
+        Y: =437
         ZIndex: =15
-
-    Label14 As label:
-        Align: =Align.Right
-        BorderColor: =RGBA(0, 89, 178, 1)
-        Color: =RGBA(0, 0, 0, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        Size: =13
-        Text: ="S.N."
-        Width: =135
-        X: =391
-        Y: =163
-        ZIndex: =16
-
-    sntxt As text:
-        BorderColor: =RGBA(0, 89, 178, 1)
-        BorderThickness: =2
-        Color: =RGBA(0, 0, 0, 1)
-        Default: =""
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        FocusedBorderThickness: =4
-        Format: =TextFormat.Number
-        HoverBorderColor: =RGBA(0, 89, 178, 1)
-        HoverColor: =RGBA(0, 0, 0, 1)
-        HoverFill: =RGBA(153, 205, 255, 1)
-        Size: =13
-        Width: =222
-        X: =579
-        Y: =163
-        ZIndex: =17
 
     Icon3 As icon.BackArrow:
         BorderColor: =RGBA(0, 89, 178, 1)
@@ -189,8 +146,7 @@
         DisabledColor: =RGBA(244, 244, 244, 1)
         Icon: =Icon.BackArrow
         OnSelect: |-
-            =Reset(sntxt);
-            Reset(desctxt);
+            =Reset(desctxt);
             Reset(qtytxt);
             Reset(purposetxt);
             Back()
