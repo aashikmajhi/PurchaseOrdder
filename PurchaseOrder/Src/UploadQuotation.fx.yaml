@@ -88,8 +88,8 @@ UploadQuotation As screen:
         ZIndex: =6
 
     "Gallery4_1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
-        BorderColor: =RGBA(0, 89, 178, 1)
-        Fill: =If(Items=0,Transparent,LightCyan)
+        BorderThickness: =3
+        Fill: =If(Items=0,Transparent,RGBA(1,100,11,0.3))
         Height: =323
         Items: =AttachmentControl_1.Attachments
         Layout: =Layout.Vertical
