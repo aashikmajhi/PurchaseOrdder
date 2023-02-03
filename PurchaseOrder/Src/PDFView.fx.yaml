@@ -296,11 +296,12 @@ PDFView As screen:
         Color: =RGBA(0, 0, 0, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         FontWeight: =FontWeight.Semibold
+        Height: =50
         Size: =13
         Text: ="Please arrange to purchase the"
-        Width: =553
+        Width: =291
         X: =41
-        Y: =252
+        Y: =242
         ZIndex: =20
 
     Label23_1 As label:
@@ -360,27 +361,41 @@ PDFView As screen:
             =//Office365Outlook.SendEmailV2("aashikmajhi@gmail.com","Testing mail.","We are just testing the pdf generating feature and sending it as an email.",{Attachments:Table({Name:"Purchase Requisition.pdf",ContentBytes:myPdf})});
             //Patch('Purchase Requisition',Defaults('Purchase Requisition'),{Title:TextInput9_1.Text,From:TextInput8_2.Text,Department:TextInput8_3.Text,Date:DatePicker2_1.SelectedDate,'Attached Document':myPdf});
             
-            Collect(
-                myRequsition,
-                {
-                    Title: TextInput9_1.Text,
-                    From: TextInput8_2.Text,
-                    Department: TextInput8_3.Text,
-                    Date:DatePicker2_1.SelectedDate,
-                    'Attached Document':myPdf
-                }
-            );
+            //Collect(
+            //    myRequsition,
+            //    {
+            //        Title: TextInput9_1.Text,
+            //        From: TextInput8_2.Text,
+            //        Department: TextInput8_3.Text,
+            //        Date:DatePicker2_1.SelectedDate,
+            //        'Attached Document':myPdf
+            //    }
+            //);
             
-            AddColumns(
-                'Purchase Requisition',
-                Title, myRequsition[@Title],
-                From, myRequsition[@From],
-                Department, myRequsition[@Department],
-                Date, myRequsition[@Date],
-                'Attached Document',myRequsition[@'Attached Document']
-            )
+            //AddColumns(
+            //    'Purchase Requisition',
+            //    Title, myRequsition[@Title],
+            //    From, myRequsition[@From],
+            //    Department, myRequsition[@Department],
+            //    Date, myRequsition[@Date],
+            //    'Attached Document',myRequsition[@'Attached Document']
+            //)
         Visible: =false
         X: =610
         Y: =651
         ZIndex: =25
+
+    Label22_2 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(0, 89, 178, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =50
+        Size: =15
+        Text: ="Requisition Form"
+        Width: =291
+        X: =476
+        Y: =242
+        ZIndex: =26
 
