@@ -114,8 +114,8 @@
   },
   "ScreenOrder": [
     "SplashScreen",
+    "Home",
     "Dashboard",
-    "Trial",
     "PurchaseRequisition",
     "PDFView",
     "Add New Item",
@@ -124,7 +124,7 @@
     "PurchaseOrder",
     "Approval",
     "PDF",
-    "Dashboard_1",
-    "Dashboard_2"
+    "Trial",
+    "Home2"
   ]
 }

@@ -1,7 +1,7 @@
 PDFView As screen:
     Fill: =RGBA(232, 232, 232, 1)
     OnVisible: |-
-        =Set(myPdf,PDF(PDFView,{DPI: 72, Margin: "25mm", Orientation: "Landscape",Size:"B5"}))
+        =Set(myPdf,PDF(PDFView ,{DPI: 72, Margin: "15mm", Orientation: "Landscape",Size:PaperSize.A4,ExpandContainers:true}))
 
     "Gallery1_1 As gallery.'BrowseLayout_Vertical_OneTextVariant_ver4.0'":
         BorderColor: =RGBA(0, 89, 178, 1)
@@ -348,4 +348,18 @@ PDFView As screen:
         Width: =1142
         X: =104
         ZIndex: =24
+
+    Timer2 As timer:
+        AutoPause: =false
+        AutoStart: =true
+        Duration: =8000
+        Fill: =RGBA(0, 51, 102, 1)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
+        OnTimerEnd: |-
+            =Office365Outlook.SendEmailV2("aashikmajhi@gmail.com","Testing mail.","We are just testing the pdf generating feature and sending it as an email.",{Attachments:Table({Name:"Purchase Requisition.pdf",ContentBytes:myPdf})})
+        Visible: =false
+        X: =610
+        Y: =651
+        ZIndex: =25
 

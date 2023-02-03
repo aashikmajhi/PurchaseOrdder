@@ -1,8 +1,8 @@
-Dashboard_1 As screen:
+Home2 As screen:
     BackgroundImage: =
-    Fill: =
+    Fill: =RGBA(235, 245, 255, 1)
 
-    Button7 As button:
+    Button7_1 As button:
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
@@ -18,19 +18,19 @@ Dashboard_1 As screen:
         Y: =262
         ZIndex: =1
 
-    Gallery3 As gallery.galleryVertical:
+    Gallery3_1 As gallery.galleryVertical:
         BorderColor: =RGBA(0, 89, 178, 1)
-        Height: =327
+        Height: =339
         Items: ='Purchase Requisition'
         Layout: =Layout.Vertical
         ShowScrollbar: =false
         TemplateSize: =If(Self.Layout = Layout.Horizontal, Min(280, Self.Width - 60), Min(280, Self.Height - 60))
         Width: =1294
         X: =34
-        Y: =366
+        Y: =354
         ZIndex: =1
 
-    Gallery2 As gallery.galleryVertical:
+    Gallery2_1 As gallery.galleryVertical:
         BorderColor: =RGBA(235, 245, 255, 1)
         BorderThickness: =1
         Height: =79
@@ -44,7 +44,7 @@ Dashboard_1 As screen:
         Y: =275
         ZIndex: =2
 
-        Button5 As button:
+        Button5_1 As button:
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             DisabledFill: =RGBA(244, 244, 244, 1)
@@ -59,7 +59,7 @@ Dashboard_1 As screen:
             Y: =13
             ZIndex: =1
 
-    Label11_9 As label:
+    Label11_10 As label:
         Align: =Align.Center
         BorderColor: =RGBA(0, 89, 178, 1)
         Color: =RGBA(39, 113, 194, 1)
@@ -74,7 +74,7 @@ Dashboard_1 As screen:
         Y: =40
         ZIndex: =3
 
-    Button6 As button:
+    Button6_1 As button:
         Align: =Align.Left
         Color: =RGBA(0, 80, 160, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
@@ -89,19 +89,7 @@ Dashboard_1 As screen:
         Size: =23
         Text: ="Hey! " & Office365Users.MyProfile().GivenName & Char(13) & If(Hour(Now())<12, "Good morning, ", Hour(Now())<17, "Good afternoon, ", "Good evening, ") & " Welcome Back"
         Width: =524
-        X: =166
+        X: =16
         Y: =144
         ZIndex: =4
-
-    Image2 As image:
-        BorderColor: =RGBA(0, 89, 178, 1)
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        RadiusBottomLeft: =50
-        RadiusBottomRight: =50
-        RadiusTopLeft: =50
-        RadiusTopRight: =50
-        X: =34
-        Y: =153
-        ZIndex: =5
 
