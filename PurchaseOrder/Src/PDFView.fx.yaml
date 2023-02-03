@@ -373,11 +373,11 @@ PDFView As screen:
             
             AddColumns(
                 'Purchase Requisition',
-                Title: myRequsition[@Title],
-                From: myRequsition[@From],
-                Department: myRequsition[@Department],
-                Date: myRequsition[@Date],
-                'Attached Document':myRequsition[@'Attached Document']
+                Title, myRequsition[@Title],
+                From, myRequsition[@From],
+                Department, myRequsition[@Department],
+                Date, myRequsition[@Date],
+                'Attached Document',myRequsition[@'Attached Document']
             )
         Visible: =false
         X: =610
