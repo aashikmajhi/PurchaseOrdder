@@ -352,12 +352,33 @@ PDFView As screen:
     Timer2 As timer:
         AutoPause: =false
         AutoStart: =true
-        Duration: =8000
+        Duration: =10000
         Fill: =RGBA(0, 51, 102, 1)
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
         OnTimerEnd: |-
-            =Office365Outlook.SendEmailV2("aashikmajhi@gmail.com","Testing mail.","We are just testing the pdf generating feature and sending it as an email.",{Attachments:Table({Name:"Purchase Requisition.pdf",ContentBytes:myPdf})})
+            =//Office365Outlook.SendEmailV2("aashikmajhi@gmail.com","Testing mail.","We are just testing the pdf generating feature and sending it as an email.",{Attachments:Table({Name:"Purchase Requisition.pdf",ContentBytes:myPdf})});
+            //Patch('Purchase Requisition',Defaults('Purchase Requisition'),{Title:TextInput9_1.Text,From:TextInput8_2.Text,Department:TextInput8_3.Text,Date:DatePicker2_1.SelectedDate,'Attached Document':myPdf});
+            
+            Collect(
+                myRequsition,
+                {
+                    Title: TextInput9_1.Text,
+                    From: TextInput8_2.Text,
+                    Department: TextInput8_3.Text,
+                    Date:DatePicker2_1.SelectedDate,
+                    'Attached Document':myPdf
+                }
+            );
+            
+            AddColumns(
+                'Purchase Requisition',
+                Title: myRequsition[@Title],
+                From: myRequsition[@From],
+                Department: myRequsition[@Department],
+                Date: myRequsition[@Date],
+                'Attached Document':myRequsition[@'Attached Document']
+            )
         Visible: =false
         X: =610
         Y: =651
