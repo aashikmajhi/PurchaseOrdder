@@ -46,6 +46,7 @@ SplashScreen As screen:
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
         OnTimerEnd: =Navigate(Dashboard_1)
+        Visible: =false
         X: =567
         Y: =622
         ZIndex: =8
