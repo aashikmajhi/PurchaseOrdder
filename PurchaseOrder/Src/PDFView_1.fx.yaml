@@ -361,7 +361,7 @@ PDFView_1 As screen:
         OnTimerEnd: |-
             =//Office365Outlook.SendEmailV2("aashikmajhi@gmail.com","Testing mail.","We are just testing the pdf generating feature and sending it as an email.",{Attachments:Table({Name:"Purchase Requisition.pdf",ContentBytes:myPdf})});
             SavetoSP.Run("PurchaseReq for the Ref No " & TextInput9_2.Text &".pdf",Substitute(JSON(myPdf,IncludeBinaryData),"""",""));
-            //Patch('Purchase Requisition',Defaults('Purchase Requisition'),{Title:TextInput9_2.Text,From:TextInput8_4.Text,Department:TextInput8_5.Text,Date:DatePicker2_2.SelectedDate,'Attached Document':myPdf});
+            //Patch('Purchase Requisition',Defaults('Purchase Requisition'),{Title:TextInput9_2.Text,From:TextInput8_4.Text,Department:TextInput8_5.Text,Date:DatePicker2_2.SelectedDate,'Attached Document':});
         Visible: =false
         X: =610
         Y: =651

@@ -48,12 +48,18 @@
       "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1615/1.0.1615.3163/logicflows/icon.png",
       "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
       "parameterHints": {
+        "a640784d-726c-42c9-b997-9fe1f75d802e": {
+          "value": "shared_sharepointonline"
+        },
         "workflowEntityId": {},
         "workflowName": {
           "value": "a3cd0b7f-e0b3-4f59-b4f9-e2f9d18462dc"
         }
       },
       "parameterHintsV2": {
+        "shared_sharepointonline": {
+          "value": "a640784d-726c-42c9-b997-9fe1f75d802e"
+        },
         "workflowEntityId": {},
         "workflowName": {
           "value": "a3cd0b7f-e0b3-4f59-b4f9-e2f9d18462dc"
@@ -85,6 +91,9 @@
     "datasets": {
       "https://astralnepal.sharepoint.com/sites/NatRuleNITC": {
         "dataSources": {
+          "Documents": {
+            "tableName": "1fc6d781-97e8-4bb4-bf9e-23c9bc81dde4"
+          },
           "Purchase Requisition": {
             "tableName": "0fadbd28-4233-419f-a479-8685c1e8f4eb"
           }
@@ -92,7 +101,8 @@
       }
     },
     "dataSources": [
-      "Purchase Requisition"
+      "Purchase Requisition",
+      "Documents"
     ],
     "dependencies": {},
     "dependents": [
