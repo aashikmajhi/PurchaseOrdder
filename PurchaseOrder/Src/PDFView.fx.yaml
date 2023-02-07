@@ -305,14 +305,15 @@ PDFView As screen:
         ZIndex: =20
 
     Label23_1 As label:
+        Align: =Align.Center
         BorderColor: =RGBA(0, 89, 178, 1)
         Color: =RGBA(0, 0, 0, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         FontWeight: =FontWeight.Bold
         Size: =13
-        Text: ="No"
-        Width: =56
-        X: =948
+        Text: ="Ref No"
+        Width: =93
+        X: =911
         Y: =242
         ZIndex: =21
 
@@ -359,7 +360,7 @@ PDFView As screen:
         HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
         OnTimerEnd: |-
             =//Office365Outlook.SendEmailV2("aashikmajhi@gmail.com","Testing mail.","We are just testing the pdf generating feature and sending it as an email.",{Attachments:Table({Name:"Purchase Requisition.pdf",ContentBytes:myPdf})});
-            //Patch('Purchase Requisition',Defaults('Purchase Requisition'),{Title:TextInput9_1.Text,From:TextInput8_2.Text,Department:TextInput8_3.Text,Date:DatePicker2_1.SelectedDate,'Attached Document':myPdf});
+            Patch('Purchase Requisition',Defaults('Purchase Requisition'),{Title:TextInput9_1.Text,From:TextInput8_2.Text,Department:TextInput8_3.Text,Date:DatePicker2_1.SelectedDate});
             
             //Collect(
             //    myRequsition,
