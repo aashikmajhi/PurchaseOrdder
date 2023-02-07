@@ -91,18 +91,18 @@
     "datasets": {
       "https://astralnepal.sharepoint.com/sites/NatRuleNITC": {
         "dataSources": {
-          "Documents": {
-            "tableName": "1fc6d781-97e8-4bb4-bf9e-23c9bc81dde4"
-          },
           "Purchase Requisition": {
             "tableName": "0fadbd28-4233-419f-a479-8685c1e8f4eb"
+          },
+          "RequisitionPDF": {
+            "tableName": "c9ef34cf-91bc-4972-8788-591bbf73fa76"
           }
         }
       }
     },
     "dataSources": [
       "Purchase Requisition",
-      "Documents"
+      "RequisitionPDF"
     ],
     "dependencies": {},
     "dependents": [
