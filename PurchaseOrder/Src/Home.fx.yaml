@@ -21,10 +21,10 @@ Home As screen:
     Gallery3 As gallery.galleryVertical:
         BorderColor: =RGBA(0, 89, 178, 1)
         Height: =327
-        Items: =Sort(Filter('Purchase Requisition',Status.Value=Gallery2.Selected.fil),Date,Ascending)
+        Items: =Sort(If(Gallery2.Selected.fil="All",Filter('Purchase Requisition',Date,Ascending) ,Filter('Purchase Requisition',Status.Value=Gallery2.Selected.fil),Date,Ascending)
         Layout: =Layout.Vertical
         ShowScrollbar: =false
-        TemplateSize: =If(Self.Layout = Layout.Horizontal, Min(280, Self.Width - 60), Min(280, Self.Height - 60))
+        TemplateSize: =322
         Width: =1294
         X: =34
         Y: =366
@@ -38,8 +38,8 @@ Home As screen:
             Size: =13
             Text: =ThisItem.Date
             Width: =229
-            X: =40
-            Y: =40
+            X: =163
+            Y: =44
             ZIndex: =1
 
         Label9 As label:
@@ -49,19 +49,22 @@ Home As screen:
             OnSelect: =Select(Parent)
             Size: =13
             Text: =ThisItem.Title
-            X: =40
-            Y: =80
+            Width: =107
+            X: =163
+            Y: =4
             ZIndex: =2
 
         Label14 As label:
             BorderColor: =RGBA(0, 89, 178, 1)
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
+            Height: =45
             OnSelect: =Select(Parent)
             Size: =13
             Text: =ThisItem.From
-            X: =230
-            Y: =40
+            Width: =205
+            X: =160
+            Y: =84
             ZIndex: =3
 
         Label16 As label:
@@ -71,9 +74,86 @@ Home As screen:
             OnSelect: =Select(Parent)
             Size: =13
             Text: =ThisItem.Department
-            X: =437
-            Y: =40
+            Width: =220
+            X: =160
+            Y: =133
             ZIndex: =4
+
+        Label21 As label:
+            Align: =Align.Right
+            BorderColor: =RGBA(0, 89, 178, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            OnSelect: =Select(Parent)
+            Size: =13
+            Text: ="Ref No"
+            Width: =133
+            X: =27
+            Y: =3
+            ZIndex: =5
+
+        Label27 As label:
+            Align: =Align.Right
+            BorderColor: =RGBA(0, 89, 178, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            OnSelect: =Select(Parent)
+            Size: =13
+            Text: ="Date"
+            Width: =133
+            X: =27
+            Y: =48
+            ZIndex: =6
+
+        Label30 As label:
+            Align: =Align.Right
+            BorderColor: =RGBA(0, 89, 178, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            OnSelect: =Select(Parent)
+            Size: =13
+            Text: ="From"
+            Width: =133
+            X: =27
+            Y: =90
+            ZIndex: =7
+
+        Label31 As label:
+            Align: =Align.Right
+            BorderColor: =RGBA(0, 89, 178, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            OnSelect: =Select(Parent)
+            Size: =13
+            Text: ="Department"
+            Width: =133
+            X: =27
+            Y: =131
+            ZIndex: =8
+
+        Label32 As label:
+            Align: =Align.Right
+            BorderColor: =RGBA(0, 89, 178, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            OnSelect: =Select(Parent)
+            Size: =13
+            Text: ="Status"
+            Width: =136
+            X: =27
+            Y: =171
+            ZIndex: =9
+
+        Label33 As label:
+            BorderColor: =RGBA(0, 89, 178, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            OnSelect: =Select(Parent)
+            Size: =13
+            Text: =ThisItem.Status.Value
+            X: =163
+            Y: =173
+            ZIndex: =10
 
     Gallery2 As gallery.galleryVertical:
         BorderColor: =RGBA(235, 245, 255, 1)
