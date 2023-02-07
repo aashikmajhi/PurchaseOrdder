@@ -10,7 +10,7 @@ Home As screen:
         FontWeight: =FontWeight.Semibold
         Height: =446
         HoverColor: =RGBA(255, 255, 255, 1)
-        HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
+        HoverFill: =Self.Fill
         Size: =15
         Text: =""
         Width: =1328
@@ -21,7 +21,7 @@ Home As screen:
     Gallery3 As gallery.galleryVertical:
         BorderColor: =RGBA(0, 89, 178, 1)
         Height: =327
-        Items: ='Purchase Requisition'
+        Items: =Filter('Purchase Requisition',Gallery2.Selected.Filter,Status.Value)
         Layout: =Layout.Vertical
         ShowScrollbar: =false
         TemplateSize: =If(Self.Layout = Layout.Horizontal, Min(280, Self.Width - 60), Min(280, Self.Height - 60))
@@ -52,7 +52,7 @@ Home As screen:
             FontWeight: =FontWeight.Semibold
             HoverColor: =RGBA(255, 255, 255, 1)
             HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
-            OnSelect: =Select(Parent)
+            OnSelect: =Filter('Purchase Requisition',Status.Value)
             Size: =15
             Text: =ThisItem.Filter
             X: =50
@@ -111,7 +111,9 @@ Home As screen:
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)
         Icon: =Icon.AddDocument
-        OnSelect: =Navigate(Dashboard)
+        OnSelect: |-
+            =Clear(PurchaseReq);
+            Navigate(Dashboard)
         X: =1260
         Y: =178
         ZIndex: =6

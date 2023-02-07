@@ -36,8 +36,8 @@
       "Modified": "Modified",
       "PDF": "PDF",
       "PDF#Id": "PDF Id",
-      "PDF_x003a__x0020_Title": "PDF: Title",
-      "PDF_x003a__x0020_Title#Id": "PDF: Title Id",
+      "Status": "Status",
+      "Status#Id": "Status Id",
       "Title": "Title"
     },
     "DatasetName": "https://astralnepal.sharepoint.com/sites/NatRuleNITC",
