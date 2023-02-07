@@ -2,11 +2,11 @@ PurchaseRequisition As screen:
     Fill: =RGBA(232, 232, 232, 1)
     OnVisible: =
 
-    "Gallery1 As gallery.'BrowseLayout_Vertical_OneTextVariant_ver4.0'":
+    "SNGallery As gallery.'BrowseLayout_Vertical_OneTextVariant_ver4.0'":
         BorderColor: =RGBA(0, 89, 178, 1)
         BorderThickness: =2
         Height: =245
-        Items: =Sequence(CountRows(Gallery5.AllItems))
+        Items: =Sequence(CountRows(ProdGallery.AllItems))
         Layout: =Layout.Vertical
         TemplatePadding: =0
         TemplateSize: |
@@ -31,14 +31,14 @@ PurchaseRequisition As screen:
             BorderColor: =RGBA(0, 89, 178, 1)
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
-            Height: =Gallery1.TemplateHeight
+            Height: =SNGallery.TemplateHeight
             OnSelect: =Select(Parent)
             Size: =13
             Text: =ThisItem.Value
             Width: =80
             ZIndex: =4
 
-    Gallery5 As gallery.galleryVertical:
+    ProdGallery As gallery.galleryVertical:
         BorderColor: =RGBA(0, 89, 178, 1)
         BorderThickness: =2
         Height: =245
@@ -56,7 +56,7 @@ PurchaseRequisition As screen:
             BorderColor: =RGBA(0, 89, 178, 1)
             BorderThickness: =3
             Fill: =RGBA(0, 51, 102, 1)
-            Height: =Gallery5.TemplateHeight
+            Height: =ProdGallery.TemplateHeight
             OnSelect: =Select(Parent)
             Width: =1
             X: =583
@@ -66,7 +66,7 @@ PurchaseRequisition As screen:
             BorderColor: =RGBA(0, 89, 178, 1)
             BorderThickness: =2
             Fill: =RGBA(0, 51, 102, 1)
-            Height: =Gallery5.TemplateHeight
+            Height: =ProdGallery.TemplateHeight
             OnSelect: =Select(Parent)
             Width: =1
             X: =840
@@ -78,7 +78,7 @@ PurchaseRequisition As screen:
             Fill: =RGBA(0, 51, 102, 1)
             Height: =1
             OnSelect: =Select(Parent)
-            Width: =Gallery5.TemplateWidth
+            Width: =ProdGallery.TemplateWidth
             Y: =46
             ZIndex: =4
 
@@ -274,7 +274,7 @@ PurchaseRequisition As screen:
         Y: =130
         ZIndex: =13
 
-    DatePicker2 As datepicker:
+    date As datepicker:
         BorderColor: =RGBA(0, 89, 178, 1)
         CalendarHeaderFill: =RGBA(0, 51, 102, 1)
         Color: =RGBA(0, 0, 0, 1)
@@ -302,7 +302,7 @@ PurchaseRequisition As screen:
         Y: =189
         ZIndex: =15
 
-    TextInput8 As text:
+    from As text:
         BorderColor: =RGBA(0, 89, 178, 1)
         BorderThickness: =2
         Color: =RGBA(0, 0, 0, 1)
@@ -333,7 +333,7 @@ PurchaseRequisition As screen:
         Y: =195
         ZIndex: =18
 
-    TextInput8_1 As text:
+    department As text:
         BorderColor: =RGBA(0, 89, 178, 1)
         BorderThickness: =2
         Color: =RGBA(0, 0, 0, 1)
@@ -377,7 +377,7 @@ PurchaseRequisition As screen:
         Y: =242
         ZIndex: =21
 
-    TextInput9 As text:
+    refNo As text:
         BorderColor: =RGBA(0, 89, 178, 1)
         BorderThickness: =2
         Color: =RGBA(0, 0, 0, 1)

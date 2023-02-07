@@ -23,7 +23,6 @@
       "{TriggerWindowEndToken}": "Trigger Window End Token",
       "{TriggerWindowStartToken}": "Trigger Window Start Token",
       "{VersionNumber}": "Version number",
-      "AttachedDocument": "Attached Document",
       "Author": "Created By",
       "Author#Claims": "Created By Claims",
       "ComplianceAssetId": "Compliance Asset Id",
@@ -35,6 +34,10 @@
       "From": "From",
       "ID": "ID",
       "Modified": "Modified",
+      "PDF": "PDF",
+      "PDF#Id": "PDF Id",
+      "PDF_x003a__x0020_Title": "PDF: Title",
+      "PDF_x003a__x0020_Title#Id": "PDF: Title Id",
       "Title": "Title"
     },
     "DatasetName": "https://astralnepal.sharepoint.com/sites/NatRuleNITC",
