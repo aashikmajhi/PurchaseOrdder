@@ -45,14 +45,18 @@ Home As screen:
         ZIndex: =2
 
         Button5 As button:
+            BorderColor: =RGBA(153, 189, 224, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             DisabledFill: =RGBA(244, 244, 244, 1)
-            Fill: =RGBA(0, 89, 178, 1)
+            Fill: =RGBA(65, 145, 224, 0.86)
             FontWeight: =FontWeight.Semibold
             HoverColor: =RGBA(255, 255, 255, 1)
-            HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
-            OnSelect: =Filter('Purchase Requisition',Status.Value)
+            HoverFill: =RGBA(56, 107, 194, 0.83)
+            OnSelect: =Filter('Purchase Requisition',Status.Value);
+            PressedBorderColor: =
+            PressedColor: =Self.Color
+            PressedFill: =RGBA(25, 111, 224, 0.85)
             Size: =15
             Text: =ThisItem.Filter
             X: =50
@@ -84,8 +88,9 @@ Home As screen:
         Font: =Font.Georgia
         FontWeight: =FontWeight.Semibold
         Height: =118
-        HoverColor: =RGBA(255, 255, 255, 1)
-        HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
+        HoverFill: =Self.Fill
+        PressedColor: =Self.Color
+        PressedFill: =
         Size: =23
         Text: ="Hey! " & Office365Users.MyProfile().GivenName & Char(13) & If(Hour(Now())<12, "Good morning, ", Hour(Now())<17, "Good afternoon, ", "Good evening, ") & " Welcome Back"
         Width: =524
