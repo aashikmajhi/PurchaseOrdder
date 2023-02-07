@@ -21,7 +21,7 @@ Home As screen:
     Gallery3 As gallery.galleryVertical:
         BorderColor: =RGBA(0, 89, 178, 1)
         Height: =327
-        Items: =Sort(If(Gallery2.Selected.fil="All",Filter('Purchase Requisition',Date,Ascending) ,Filter('Purchase Requisition',Status.Value=Gallery2.Selected.fil),Date,Ascending)
+        Items: =If(Gallery2.Selected.fil="All",Sort('Purchase Requisition',Date,Ascending),Sort(Filter('Purchase Requisition',Status.Value=Gallery2.Selected.fil),Date,Ascending))
         Layout: =Layout.Vertical
         ShowScrollbar: =false
         TemplateSize: =322
