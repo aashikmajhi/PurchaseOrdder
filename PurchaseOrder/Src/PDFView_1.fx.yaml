@@ -360,29 +360,8 @@ PDFView_1 As screen:
         HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
         OnTimerEnd: |-
             =//Office365Outlook.SendEmailV2("aashikmajhi@gmail.com","Testing mail.","We are just testing the pdf generating feature and sending it as an email.",{Attachments:Table({Name:"Purchase Requisition.pdf",ContentBytes:myPdf})});
-            //Patch('Purchase Requisition',Defaults('Purchase Requisition'),{Title:TextInput9_2.Text,From:TextInput8_4.Text,Department:TextInput8_5.Text,Date:DatePicker2_2.SelectedDate});
-            
-            Savetodatasource.Run(TextInput9_2.Text,TextInput8_4.Text,TextInput8_5.Text,DatePicker2_2.SelectedDate,myPdf);
-            
-            //Collect(
-            //    myRequsition,
-            //    {
-            //        Title: TextInput9_1.Text,
-            //        From: TextInput8_2.Text,
-            //        Department: TextInput8_3.Text,
-            //        Date:DatePicker2_1.SelectedDate,
-            //        'Attached Document':myPdf
-            //    }
-            //);
-            
-            //AddColumns(
-            //    'Purchase Requisition',
-            //    Title, myRequsition[@Title],
-            //    From, myRequsition[@From],
-            //    Department, myRequsition[@Department],
-            //    Date, myRequsition[@Date],
-            //    'Attached Document',myRequsition[@'Attached Document']
-            //)
+            //Patch('Purchase Requisition',Defaults('Purchase Requisition'),{Title:TextInput9_2.Text,From:TextInput8_4.Text,Department:TextInput8_5.Text,Date:DatePicker2_2.SelectedDate,'Attached Document':myPdf});
+            StorePDF.Run("Ref No" & TextInput9_2.Text & "PurchaseReq.pdf",myPdf);
         Visible: =false
         X: =610
         Y: =651
