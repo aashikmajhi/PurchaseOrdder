@@ -2,7 +2,7 @@ PDFView_1 As screen:
     Fill: =RGBA(232, 232, 232, 1)
     OnVisible: |-
         =//Set(myPdf,PDF(PDFView_1 ,{DPI: 72, Margin: "15mm", Orientation: Portrait,Size:PaperSize.A4,ExpandContainers:true}))
-        Set(myPdf1,PDF(Approval,{DPI:72,Margin:"15mm",Orientation:Portrait,Size:PaperSize.A4,ExpandContainers: true }))
+        Set(myPdf1,PDF(Home2_2,{DPI:72,Margin:"15mm",Orientation:Portrait,Size:PaperSize.A4,ExpandContainers: true }))
 
     "Gallery1_2 As gallery.'BrowseLayout_Vertical_OneTextVariant_ver4.0'":
         BorderColor: =RGBA(0, 89, 178, 1)
@@ -365,7 +365,7 @@ PDFView_1 As screen:
             //Patch('Purchase Requisition',Defaults('Purchase Requisition'),{Title:TextInput9_2.Text,From:TextInput8_4.Text,Department:TextInput8_5.Text,Date:DatePicker2_2.SelectedDate,PDF:PdfViewer3});
             //Clear(PurchaseReq);
             //Navigate(Home)
-            SavetoSP.Run("abc.pdf",Substitute(JSON(myPdf1,IncludeBinaryData),"""",""));
+            SavetoSP.Run("abc1.pdf",Substitute(JSON(myPdf1,IncludeBinaryData),"""",""));
         Visible: =false
         X: =610
         Y: =651
