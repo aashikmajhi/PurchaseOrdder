@@ -1,7 +1,7 @@
 PDFView_1 As screen:
     Fill: =RGBA(232, 232, 232, 1)
     OnVisible: |-
-        =Set(myPdf,PDF(PDFView_1 ,{DPI: 72, Margin: "15mm", Orientation: "Landscape",Size:PaperSize.A4,ExpandContainers:true}))
+        =Set(myPdf,PDF(PDFView_1 ,{DPI: 72, Margin: "15mm", Orientation: Portrait,Size:PaperSize.A4,ExpandContainers:true}))
 
     "Gallery1_2 As gallery.'BrowseLayout_Vertical_OneTextVariant_ver4.0'":
         BorderColor: =RGBA(0, 89, 178, 1)
