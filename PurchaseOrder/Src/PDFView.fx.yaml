@@ -126,7 +126,7 @@ PDFView As screen:
         Size: =13
         Text: ="Sanctioned By"
         Width: =139
-        X: =826
+        X: =911
         Y: =651
         ZIndex: =5
 
@@ -138,7 +138,7 @@ PDFView As screen:
         Size: =13
         Text: ="CEO"
         Width: =295
-        X: =967
+        X: =1056
         Y: =651
         ZIndex: =6
 
@@ -390,7 +390,7 @@ PDFView As screen:
         Size: =13
         Text: ="Approved By"
         Width: =126
-        X: =54
+        X: =80
         Y: =651
         ZIndex: =27
 
@@ -404,7 +404,7 @@ PDFView As screen:
             =//Office365Users.ManagerV2(Office365Users.MyProfileV2().userPrincipalName).userPrincipalName
             "Finance Head/Department Head"
         Width: =295
-        X: =181
+        X: =207
         Y: =651
         ZIndex: =28
 
