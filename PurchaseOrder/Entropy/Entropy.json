@@ -69,7 +69,6 @@
     "galleryTemplate5_1": 64,
     "galleryTemplate5_2": 209,
     "Home": 3,
-    "Home_1": 228,
     "Home2": 161,
     "Home2_1": 24,
     "Icon1": 175,
@@ -230,11 +229,12 @@
     "Title1": 253,
     "Title2_1": 79,
     "Trial": 87,
-    "UploadQuotation": 74
+    "UploadQuotation": 74,
+    "ViewPDF": 228
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "02/08/2023 06:15:49",
+  "HeaderLastSavedDateTimeUTC": "02/08/2023 06:17:38",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "0bb273cb-8ae2-4918-a485-11826e111bf3": "\"/providers/microsoft.powerapps/apis/shared_logicflows/connections/a3cd0b7f-e0b3-4f59-b4f9-e2f9d18462dc\"",
@@ -362,7 +362,6 @@
     "galleryTemplate5_1": {},
     "galleryTemplate5_2": {},
     "Home": {},
-    "Home_1": {},
     "Home2": {},
     "Home2_1": {},
     "Icon1": {},
@@ -523,7 +522,8 @@
     "Title1": {},
     "Title2_1": {},
     "Trial": {},
-    "UploadQuotation": {}
+    "UploadQuotation": {},
+    "ViewPDF": {}
   },
   "PCFDynamicSchemaForIRRetrievalEntry": {},
   "PublishOrderIndices": {
@@ -594,7 +594,6 @@
     "galleryTemplate5_1": 90,
     "galleryTemplate5_2": 122,
     "Home": 0,
-    "Home_1": 0,
     "Home2": 0,
     "Home2_1": 0,
     "Icon1": 144,
@@ -755,7 +754,8 @@
     "Title1": 28,
     "Title2_1": 156,
     "Trial": 0,
-    "UploadQuotation": 0
+    "UploadQuotation": 0,
+    "ViewPDF": 0
   },
   "ResourcesJsonIndices": {
     "Image-Background Image": 1,
@@ -789,7 +789,7 @@
       "typedDataCard": 6
     },
     "DeserializationLoadTime": 2.8956039,
-    "ErrorCount": 11
+    "ErrorCount": 5
   },
   "WasLocalDatabaseReferencesEmpty": true
 }

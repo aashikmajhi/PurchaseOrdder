@@ -115,7 +115,7 @@
   "ScreenOrder": [
     "SplashScreen",
     "Home",
-    "Home_1",
+    "ViewPDF",
     "Dashboard",
     "PurchaseRequisition",
     "PDFView",

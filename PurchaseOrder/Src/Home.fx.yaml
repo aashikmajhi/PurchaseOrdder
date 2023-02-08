@@ -27,7 +27,7 @@ Home As screen:
             
             //Sort(Filter('Purchase Requisition',Status.Value=_requestTypeFilter),Date,Ascending)
         Layout: =Layout.Vertical
-        OnSelect: =Navigate(Home_1)
+        OnSelect: =Navigate(ViewPDF)
         ShowScrollbar: =false
         TemplateSize: =322
         Width: =1294
