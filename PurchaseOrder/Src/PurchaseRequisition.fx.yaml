@@ -155,30 +155,6 @@ PurchaseRequisition As screen:
         Y: =586
         ZIndex: =2
 
-    Label8_3 As label:
-        BorderColor: =RGBA(0, 89, 178, 1)
-        Color: =RGBA(0, 0, 0, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        FontWeight: =FontWeight.Bold
-        Size: =13
-        Text: ="From"
-        Width: =75
-        X: =104
-        Y: =651
-        ZIndex: =3
-
-    Label9_3 As label:
-        BorderColor: =RGBA(0, 89, 178, 1)
-        Color: =RGBA(0, 0, 0, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        FontWeight: =FontWeight.Semibold
-        Size: =13
-        Text: =Office365Users.MyProfileV2().displayName
-        Width: =190
-        X: =179
-        Y: =651
-        ZIndex: =4
-
     Label8_4 As label:
         BorderColor: =RGBA(0, 89, 178, 1)
         Color: =RGBA(0, 0, 0, 1)
@@ -187,7 +163,7 @@ PurchaseRequisition As screen:
         Size: =13
         Text: ="Approved By"
         Width: =126
-        X: =840
+        X: =80
         Y: =651
         ZIndex: =5
 
@@ -201,7 +177,7 @@ PurchaseRequisition As screen:
             =//Office365Users.ManagerV2(Office365Users.MyProfileV2().userPrincipalName).userPrincipalName
             "Finance Head/Department Head"
         Width: =295
-        X: =967
+        X: =207
         Y: =651
         ZIndex: =6
 
@@ -445,4 +421,28 @@ PurchaseRequisition As screen:
         X: =50
         Y: =50
         ZIndex: =25
+
+    Label8_10 As label:
+        BorderColor: =RGBA(0, 89, 178, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Bold
+        Size: =13
+        Text: ="Sanctioned By"
+        Width: =144
+        X: =911
+        Y: =651
+        ZIndex: =26
+
+    Label9_10 As label:
+        BorderColor: =RGBA(0, 89, 178, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Semibold
+        Size: =13
+        Text: ="CEO"
+        Width: =295
+        X: =1056
+        Y: =651
+        ZIndex: =27
 

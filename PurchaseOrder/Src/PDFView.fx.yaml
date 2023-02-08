@@ -124,9 +124,9 @@ PDFView As screen:
         DisabledColor: =RGBA(166, 166, 166, 1)
         FontWeight: =FontWeight.Bold
         Size: =13
-        Text: ="Approved By"
-        Width: =126
-        X: =840
+        Text: ="Sanctioned By"
+        Width: =139
+        X: =826
         Y: =651
         ZIndex: =5
 
@@ -136,9 +136,7 @@ PDFView As screen:
         DisabledColor: =RGBA(166, 166, 166, 1)
         FontWeight: =FontWeight.Semibold
         Size: =13
-        Text: |-
-            =//Office365Users.ManagerV2(Office365Users.MyProfileV2().userPrincipalName).userPrincipalName
-            "Finance Head/Department Head"
+        Text: ="CEO"
         Width: =295
         X: =967
         Y: =651
@@ -362,6 +360,7 @@ PDFView As screen:
             =//Office365Outlook.SendEmailV2("aashikmajhi@gmail.com","Testing mail.","We are just testing the pdf generating feature and sending it as an email.",{Attachments:Table({Name:"Purchase Requisition.pdf",ContentBytes:myPdf})});
             SavetoSP.Run("PurchaseReq for the Ref No " & TextInput9_1.Text &".pdf",Substitute(JSON(myPdf,IncludeBinaryData),"""",""));
             Patch('Purchase Requisition',Defaults('Purchase Requisition'),{Title:TextInput9_1.Text,From:TextInput8_2.Text,Department:TextInput8_3.Text,Date:DatePicker2_1.SelectedDate,PDF:PdfViewer3});
+            //Office365Outlook.SendEmailV2("amirbhandari72@gmail.com","Testing mail.","We are just testing the pdf generating feature and sending it as an email.",{Attachments:Table({Name:"PurchaseReq for the Ref No " & TextInput9_1.Text &".pdf",ContentBytes:myPdf})});
             Clear(PurchaseReq);
             Navigate(Home)
         Visible: =false
@@ -382,4 +381,30 @@ PDFView As screen:
         X: =476
         Y: =242
         ZIndex: =26
+
+    Label8_8 As label:
+        BorderColor: =RGBA(0, 89, 178, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Bold
+        Size: =13
+        Text: ="Approved By"
+        Width: =126
+        X: =54
+        Y: =651
+        ZIndex: =27
+
+    Label9_8 As label:
+        BorderColor: =RGBA(0, 89, 178, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Semibold
+        Size: =13
+        Text: |-
+            =//Office365Users.ManagerV2(Office365Users.MyProfileV2().userPrincipalName).userPrincipalName
+            "Finance Head/Department Head"
+        Width: =295
+        X: =181
+        Y: =651
+        ZIndex: =28
 

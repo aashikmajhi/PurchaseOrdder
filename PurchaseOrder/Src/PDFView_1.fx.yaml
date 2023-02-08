@@ -126,7 +126,7 @@ PDFView_1 As screen:
         Size: =13
         Text: ="Approved By"
         Width: =126
-        X: =840
+        X: =68
         Y: =651
         ZIndex: =5
 
@@ -140,7 +140,7 @@ PDFView_1 As screen:
             =//Office365Users.ManagerV2(Office365Users.MyProfileV2().userPrincipalName).userPrincipalName
             "Finance Head/Department Head"
         Width: =295
-        X: =967
+        X: =195
         Y: =651
         ZIndex: =6
 
@@ -382,4 +382,28 @@ PDFView_1 As screen:
         X: =476
         Y: =242
         ZIndex: =26
+
+    Label8_9 As label:
+        BorderColor: =RGBA(0, 89, 178, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Bold
+        Size: =13
+        Text: ="Sanctioned By"
+        Width: =156
+        X: =862
+        Y: =651
+        ZIndex: =27
+
+    Label9_9 As label:
+        BorderColor: =RGBA(0, 89, 178, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Semibold
+        Size: =13
+        Text: ="CEO"
+        Width: =295
+        X: =1019
+        Y: =651
+        ZIndex: =28
 

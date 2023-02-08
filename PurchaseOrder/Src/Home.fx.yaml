@@ -27,6 +27,7 @@ Home As screen:
             
             //Sort(Filter('Purchase Requisition',Status.Value=_requestTypeFilter),Date,Ascending)
         Layout: =Layout.Vertical
+        OnSelect: =Navigate(Home_1)
         ShowScrollbar: =false
         TemplateSize: =322
         Width: =1294
@@ -34,7 +35,7 @@ Home As screen:
         Y: =366
         ZIndex: =1
 
-        Label8 As label:
+        rfDate As label:
             BorderColor: =RGBA(0, 89, 178, 1)
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
@@ -46,7 +47,7 @@ Home As screen:
             Y: =44
             ZIndex: =1
 
-        Label9 As label:
+        rfNo As label:
             BorderColor: =RGBA(0, 89, 178, 1)
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
@@ -58,7 +59,7 @@ Home As screen:
             Y: =4
             ZIndex: =2
 
-        Label14 As label:
+        rfFrom As label:
             BorderColor: =RGBA(0, 89, 178, 1)
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
@@ -71,7 +72,7 @@ Home As screen:
             Y: =84
             ZIndex: =3
 
-        Label16 As label:
+        rfDpt As label:
             BorderColor: =RGBA(0, 89, 178, 1)
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
@@ -185,7 +186,7 @@ Home As screen:
             OnSelect: =Set(_requestTypeFilter, ThisItem.fil)
             PressedBorderColor: =
             PressedColor: =Self.Color
-            PressedFill: =RGBA(25, 111, 224, 0.85)
+            PressedFill: =RGBA(25, 111, 224, 0.91)
             Size: =15
             Text: =ThisItem.fil
             X: =50
