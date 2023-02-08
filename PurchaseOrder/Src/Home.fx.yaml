@@ -11,6 +11,7 @@ Home As screen:
         Height: =446
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =Self.Fill
+        PressedFill: =Self.Fill
         Size: =15
         Text: =""
         Width: =1328
@@ -21,7 +22,10 @@ Home As screen:
     Gallery3 As gallery.galleryVertical:
         BorderColor: =RGBA(0, 89, 178, 1)
         Height: =327
-        Items: =If(Gallery2.Selected.fil="All",Sort('Purchase Requisition',Date,Ascending),Sort(Filter('Purchase Requisition',Status.Value=Gallery2.Selected.fil),Date,Ascending))
+        Items: |-
+            =Sort(If(_requestTypeFilter="All",Sort('Purchase Requisition',Date,Ascending),Sort(Filter('Purchase Requisition',Status.Value=_requestTypeFilter),Date,Ascending)),Date,Ascending)
+            
+            //Sort(Filter('Purchase Requisition',Status.Value=_requestTypeFilter),Date,Ascending)
         Layout: =Layout.Vertical
         ShowScrollbar: =false
         TemplateSize: =322
@@ -178,6 +182,7 @@ Home As screen:
             FontWeight: =FontWeight.Semibold
             HoverColor: =RGBA(255, 255, 255, 1)
             HoverFill: =RGBA(56, 107, 194, 0.83)
+            OnSelect: =Set(_requestTypeFilter, ThisItem.fil)
             PressedBorderColor: =
             PressedColor: =Self.Color
             PressedFill: =RGBA(25, 111, 224, 0.85)
