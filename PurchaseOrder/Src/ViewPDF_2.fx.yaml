@@ -1,0 +1,30 @@
+ViewPDF_2 As screen:
+    BackgroundImage: =
+    Fill: =
+
+    Label11_18 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(0, 89, 178, 1)
+        Color: =RGBA(39, 113, 194, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Bold
+        Height: =118
+        Size: =45
+        Text: ="Astral Computers Nepal Pvt. Ltd."
+        Width: =1142
+        X: =98
+        Y: =40
+        ZIndex: =3
+
+    Image3_1 As image:
+        BorderColor: =RGBA(0, 89, 178, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =575
+        Image: =myPdf
+        Width: =1332
+        X: =18
+        Y: =174
+        ZIndex: =5
+
