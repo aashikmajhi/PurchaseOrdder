@@ -165,7 +165,9 @@ Home As screen:
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledFill: =RGBA(244, 244, 244, 1)
             Height: =319
-            Image: =LookUp(RequisitionPDF,Name="PurchaseReq for the Ref No "& ThisItem.Title & ".pdf",dataUri)
+            Image: |-
+                =LookUp(RequisitionPDF,Name="PurchaseReq for the Ref No "& ThisItem.Title & ".pdf",dataUri)
+                //Set(Image,JSON(AttachmentImage.Image,JSONFormat.IncludeBinaryData))
             OnSelect: =Select(Parent)
             Width: =321
             X: =963
