@@ -23,7 +23,7 @@ ViewPDF As screen:
             Height: =Parent.TemplateHeight
             Image: =ThisItem.Thumbnail.Large
             ImagePosition: =ImagePosition.Fill
-            OnSelect: =true
+            OnSelect: =Navigate(ViewPDF_2)
             Width: =Parent.TemplateWidth
             ZIndex: =1
 
