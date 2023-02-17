@@ -19,7 +19,7 @@ ViewPDF_1 As screen:
 
     PdfViewer4 As pdfViewer:
         Document: |-
-            ="https://astralnepal.sharepoint.com/:b:/s/NatRuleNITC/EWu1sgAjNNpBtNiJtMUvYksB-q3VoF75TJFER7nxuIp2wg?e=HJquHO"
+            ="https://astralnepal.sharepoint.com/:b:/s/NatRuleNITC/ERiub-2qiCBDplDRp_QYJ8kB6wl2Wi9s1_nKAra2nbXQBg?e=y7BYnj"
         Fill: =RGBA(235, 245, 255, 1)
         Height: =580
         Width: =1328

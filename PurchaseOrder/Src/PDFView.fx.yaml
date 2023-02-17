@@ -358,7 +358,7 @@ PDFView As screen:
         HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
         OnTimerEnd: |-
             =//Office365Outlook.SendEmailV2("aashikmajhi@gmail.com","Testing mail.","We are just testing the pdf generating feature and sending it as an email.",{Attachments:Table({Name:"Purchase Requisition.pdf",ContentBytes:myPdf})});
-            SavetoSP.Run("PurchaseReq for the Ref No "&TextInput9_1.Text&".pdf",Substitute(JSON(myPdf,IncludeBinaryData),"""",""));
+            StoreInSP.Run("PurchaseReq for the Ref No "& TextInput9_1.Text&".pdf",Substitute(JSON(myPdf,IncludeBinaryData),"""",""));
             Patch('Purchase Requisition',Defaults('Purchase Requisition'),{Title:TextInput9_1.Text,From:TextInput8_2.Text,Department:TextInput8_3.Text,Date:DatePicker2_1.SelectedDate,PDF:PdfViewer3});
             //Office365Outlook.SendEmailV2("amirbhandari72@gmail.com","Testing mail.","We are just testing the pdf generating feature and sending it as an email.",{Attachments:Table({Name:"PurchaseReq for the Ref No " & TextInput9_1.Text &".pdf",ContentBytes:myPdf})});
             Clear(PurchaseReq);Navigate(Home)
