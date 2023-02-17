@@ -7,11 +7,11 @@ ViewPDF As screen:
         Height: =768
         Items: =RequisitionPDF
         Layout: =Layout.Vertical
-        OnSelect: =true
+        OnSelect: =Navigate(ViewPDF_2)
         ShowScrollbar: =false
         TemplatePadding: =20
         TemplateSize: =Min(320, Self.Height - 60)
-        Width: =378
+        Width: =1366
         WrapCount: =2
         ZIndex: =2
 
@@ -69,12 +69,4 @@ ViewPDF As screen:
             X: =Title1.X
             Y: =Title1.Y + Title1.Height + 8
             ZIndex: =4
-
-    PdfViewer1 As pdfViewer:
-        Document: |
-            =Gallery1.Selected.dataUri
-        Height: =768
-        Width: =476
-        X: =890
-        ZIndex: =5
 

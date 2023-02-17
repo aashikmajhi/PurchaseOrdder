@@ -160,6 +160,18 @@ Home As screen:
             Y: =173
             ZIndex: =10
 
+        Image1 As image:
+            BorderColor: =RGBA(0, 89, 178, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Height: =319
+            Image: =LookUp(RequisitionPDF,Name="PurchaseReq for the Ref No "& ThisItem.Title & ".pdf",dataUri)
+            OnSelect: =Select(Parent)
+            Width: =321
+            X: =963
+            Y: =3
+            ZIndex: =11
+
     Gallery2 As gallery.galleryVertical:
         BorderColor: =RGBA(235, 245, 255, 1)
         BorderThickness: =1
