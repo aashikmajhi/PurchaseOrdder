@@ -2,7 +2,7 @@ Home2_2 As screen:
     BackgroundImage: =
     Fill: =RGBA(235, 245, 255, 1)
     OnVisible: |-
-        =Set(myPdf2,PDF(Home2_2,{DPI:72,Margin:"15mm",Orientation:Portrait,Size:PaperSize.A4,ExpandContainers: true }))
+        =Set(myPdf2,PDF(Home2_2,{DPI:72,Margin:"15mm",Orientation:PaperOrientation.Portrait,Size:PaperSize.A4,ExpandContainers: true }))
 
     Label11_16 As label:
         Align: =Align.Center
@@ -31,7 +31,7 @@ Home2_2 As screen:
         Height: =118
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
-        OnSelect: =StoreInSP.Run("abc1.pdf",Substitute(JSON(myPdf2,IncludeBinaryData),"""",""));
+        OnSelect: =StoreInSP.Run("abc1.pdf",Substitute(JSON(myPdf2,JSONFormat.IncludeBinaryData),"""",""));
         Size: =23
         Text: ="Hey! " & Office365Users.MyProfile().GivenName & Char(13) & If(Hour(Now())<12, "Good morning, ", Hour(Now())<17, "Good afternoon, ", "Good evening, ") & " Welcome Back"
         Width: =524
